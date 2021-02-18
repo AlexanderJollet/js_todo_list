@@ -32,13 +32,13 @@
     width: 92%;
     border: none;
     border-radius: 5px;
-    height: 20px;
+    height: 28px;
     font-family: 'Candal', sans-serif;
     }
     .todo-header button {
     color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 20%;
     cursor: pointer;
     padding: 5px;
     font-family: 'Candal', sans-serif;
