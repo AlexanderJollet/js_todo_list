@@ -19,7 +19,7 @@
             <ul class="todo-list">
                 <% todoTasks.forEach(details => { %>
                 <li class="todo-list-item">
-                    <div class="todo-list-item-name"><%= details.content %></div>
+                    <%= details.content %>
                     <a href="/edit/<%= details._id %>" class="edit">
                         <span class="fas fa-edit"></span>
                     </a>
@@ -32,3 +32,14 @@
         </div>
     </div>
 </body>
+
+<script>
+// Add a "checked" symbol when clicking on a list item
+    var list = document.querySelector('ul');
+    list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+    }
+    }, false);
+
+</script>

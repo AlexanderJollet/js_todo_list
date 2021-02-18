@@ -4,7 +4,7 @@
     box-sizing: border-box;
     }
     body {
-    background: #eb391a;
+    background: #0c0301;
     }
     .todo-container {
     color: white;
@@ -53,9 +53,10 @@
     border: none;
     border-radius: 5px;
     font-family: 'Candal', sans-serif;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(247, 16, 16, 0.568);
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin-right: 15px;
     }
     .todo-list-item form {
     width: 100%;
@@ -96,6 +97,7 @@
     margin-right: 10px;
     cursor:pointer;
     text-decoration: none;
+    margin-left: 30px;
     }
     .todo-list-item .remove {
     color : rgb(243, 96, 96);
@@ -103,3 +105,23 @@
     cursor:pointer;
     text-decoration: none;
     }
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+content: '';
+float: left;
+margin-right: 15px;
+border-color: #fff;
+border-style: solid;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+height: 15px;
+width: 7px;
+}

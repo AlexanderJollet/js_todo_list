@@ -73,6 +73,4 @@ app.route("/remove/:id").get((req, res) => {
 app.use(express.urlencoded({ extended: true }));
 
 
-
-
 app.listen(3000, () => console.log("Server Up and running"));
